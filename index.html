@@ -3,6 +3,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="res/images/favicon.ico">
+    <link rel="stylesheet" href="style.css">
     <title>My Dashboard</title>
   </head>
 
@@ -13,12 +14,15 @@
 
     <section>
         <div>
-            <img src="res/images/me.png" width="128" height="128" alt="My picture">
+            <figure>
+            <img src="res/images/me.png" width="128" height="128" alt="My picture" >
+            <figcaption>Mina</figcaption>
+            </figure>
         </div>
         <div>
             <ul>
-                <li>Marten Ojasaar</li>
-                <li> 24/06/2002</li>
+                <li> Marten Ojasaar </li>
+                <li> 24/06/2002 </li>
                 <li> Software Engineering </li>
             </ul>
         </div>
@@ -27,6 +31,30 @@
         </div>
     </section>
     <section>
+
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>First</th>
+                    <th>Second</th>
+                    <th>Third</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td colspan="2">1</td>
+                    <td rowspan="2">3</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">4</td>
+                    <td>X</td>
+                </tr>
+                <tr>
+                    <td colspan="2">8</td>
+                </tr>
+            </tbody>
+        
+
         <h1>Courses</h1>
         <table>
             <thead>
@@ -40,25 +68,25 @@
             <tbody>
             <tr>
                 <td>1</td>
-                <td> <a href="https://courses.cs.ut.ee/2024/ASD/fall">Agile software development</a> </td>
+                <td> <a href="https://courses.cs.ut.ee/2024/ASD/fall" title="Agile software development">Agile software development</a> </td>
                 <td>fall</td>
                 <td>82</td>
             </tr>
             <tr>
                 <td>2</td>
-                <td> <a href="https://courses.cs.ut.ee/2024/systemsmodelling/fall">Systems modelling</a> </td>
+                <td> <a href="https://courses.cs.ut.ee/2024/systemsmodelling/fall" title="Systems modelling">Systems modelling</a> </td>
                 <td>fall</td>
                 <td>85</td>
             </tr>
             <tr>
                 <td>3</td>
-                <td> <a href="https://courses.cs.ut.ee/2024/RE/fall">Requirements Engineering</a> </td>
+                <td> <a href="https://courses.cs.ut.ee/2024/RE/fall" title="Requirements Engineering">Requirements Engineering</a> </td>
                 <td>fall</td>
                 <td>99</td>
             </tr>
             <tr>
                 <td>4</td>
-                <td> <a href="https://courses.cs.ut.ee/2023/HCI/spring">Human Computer Interaction</a> </td>
+                <td> <a href="https://courses.cs.ut.ee/2023/HCI/spring" title="Human Computer Interaction">Human Computer Interaction</a> </td>
                 <td>fall</td>
                 <td>65</td>
             </tr>
@@ -84,8 +112,8 @@
             <option value="spring">Spring</option>
         </select> <br>
         <label for="attendance"><strong>Attendance</strong></label> <br>
-        <input type="radio" name="virtual-attendance" id="attendance" > <label for="attendance">Virtual attendance</label> <br>
-        <input type="radio" name="physical-attendance" id="attendance" > <label for="attendance">Physical attendance</label> <br>
+        <input type="radio" name="attendance" id="virtual-attendance" > <label for="virtual-attendance">Virtual attendance</label> <br>
+        <input type="radio" name="attendance" id="physical-attendance" > <label for="physical-attendance">Physical attendance</label> <br>
 
         <button type="submit">Submit</button>
 
